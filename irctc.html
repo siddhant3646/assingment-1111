@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function myFunction6() {
+  var a = document.getElementById("mySelect").value;
+  alert( "You selected: " + a);
+}
+function myFunction7() {
+  var b = document.getElementById("from");
+  b.value = x.value.toUpperCase();
+}
+    function myFunction8() {
+  var c = document.getElementById("to");
+  c.value = x.value.toUpperCase();
+}
+    function myFunction4(y) {
+  y.style.background = "yellow";
+}
+    function myFunction3() {
+  alert("The form was submitted");
+}
+    function myFunction2() {
+  alert("Thank you for visiting Our Website!");
+}
+    function myFunction1() {
+  alert("Welcome to Airplane Booking System");
+}
+    function bigImg(x) {
+      x.style.height = "400px";
+      x.style.width = "400px";
+    }
+    
+    function normalImg(x) {
+      x.style.height = "256px";
+      x.style.width = "320px";
+    }
+    </script>
+    <head>
+        <title>AIRLINE BOOKING</title>
+        <style>
+          /* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-left:500px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-size: 28px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: inline;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: inline;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+ .header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+ input[type=text], select {
+  width: 45%;
+  padding: 20px 20px;
+  margin: 8px 30px;
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=date], select {
+  width: 45%;
+  padding: 20px 20px;
+  margin: 8px 30px;
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 470px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e2431b;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #333;
+  }    
+li {
+  float: left;
+   }
+            
+li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 36.8px;
+ text-decoration: none;
+     }
+ li a:hover {
+ background-color: #111;
+            }
+            .all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 50px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 45%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 10px 380px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  width: 40%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  cursor: pointer;
+}
+.inkkkk{
+  display: inline;
+}
+.left,
+.middle,
+.right {
+  width: 33%;
+  display: grid,;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+ </style>
+ </head>
+
+ <body  onload="myFunction1()" onunload="myFunction2()">
+ 
+    <div class="header">
+        <h1>AIRLINE BOOKING</h1>
+        <p>Safety|Security|Punctuality</p>
+      </div>
+ <ul>
+ <li><a href="#home">AIR-TICKETS</a></li>
+ <li><a href="#login">LOG-IN</a></li>
+ <li><a href="#register">REGISTER</a></li>
+ <li><a href="#about">HOLIDAYS</a></li>
+ <li><a href="#about">STAYS</a></li>
+ <li><a href="#about">CONTACT US</a></li>
+ <li><a href="#about">AIRPORT-WiFi </a></li>
+ <li><a href="#news">COVID NEWS</a></li>
+ </ul>
+ <fieldset style="background-color: white; width: 90% ; margin-top: 20px;margin-left: 60px; display: inline;padding-bottom: 40px;">
+ <legend style="text-align:center ; font-size: 25px;"> BOOK-TICKETS</legend>
+ <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="businessman.png" alt="Buisness.png" width="320" height="256px" style="margin-left: 530px;">
+ <form onsubmit="myFunction3()">
+    <input type="text" id="from" name="from" placeholder="From" onfocus="myFunction4(this)" onblur="myFunction7()">
+    <input type="text" id="to" name="To" placeholder="To*" onfocus="myFunction4(this)" onblur="myFunction8()">
+    <input type="date" id="doj" name="doj">
+    <select id="mySelect" name="class" onchange="myFunction6()">
+      <option value="none">Select A Class</option>    
+      <option value="Economy Class">Economy Class</option>
+      <option value="Buisness Class">Buisness Class</option>
+      <option value="First Class">First Class</option>
+    </select>
+    <label class="container">Flexible With Date
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <input type="submit" value="Find Flights">
+</form>
+<hr>
+<button class="button">PNR</button>
+<hr>
+<fieldset style="width: 50%;margin-left: 290px;">
+  <legend style="text-align:center ; font-size: 25px;">FLIGHT STATUS</legend>
+  <form>
+    <input type="text" id="train number" name="train number" placeholder="Flight Number*" onblur="myFunction5()">
+    <button class="button2">Track Flight</button>
+  </form>
+  <hr>
+</fieldset>
+<hr>
+</fieldset>
+<article class="all-browsers">
+  <h1>Developers</h1>
+  <article class="browser">
+    <h2>Anuj Mathur 18BCE10045</h2>
+  </article>
+  <article class="browser">
+    <h2>Aditya Vishwakarma 18BCE10331</h2>
+  </article>
+  <article class="browser">
+    <h2>Siddhant Singh 18BCE10266</h2>
+  </article>
+  <article class="browser">
+    <h2>Pranshu Khare 18BCE10193</h2>
+  </article>
+</article>
+<footer>
+  <p>Contact Developers<br>
+  <a href="mailto:siddhant.singh2018@vitbhopal.ac.in">siddhant.singh2018@vitbhopal.ac.in</a></p>
+  <a href="mailto:pranshu.khare2018@vitbhopal.ac.in">pranshu.khare2018@vitbhopal.ac.in</a></p>
+  <a href="mailto:anuj.mathur2018@vitbhopal.ac.in">anuj.mathur2018@vitbhopal.ac.in</a></p>
+  <a href="mailto:vishwakarma.aditya2018@vitbhopal.ac.in">vishwakarma.aditya2018@vitbhopal.ac.in</a></p>
+</footer>
+</body>
+</html>
